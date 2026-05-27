@@ -32,3 +32,4 @@ SELECT * FROM vuelos WHERE asientos_disponibles < 5;
 UPDATE vuelos SET precio_boleto = precio_boleto * 1.15 WHERE id = 1;
 
 DELETE FROM vuelos WHERE asientos_disponibles = 0;
+ALTER TABLE vuelos ADD COLUMN destino VARCHAR(100);
